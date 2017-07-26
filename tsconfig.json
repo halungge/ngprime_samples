@@ -15,5 +15,9 @@
       "es2016",
       "dom"
     ]
-  }
+  },
+  "exclude":[
+    "gulpfile.ts",
+    "node_modules"
+  ]
 }
