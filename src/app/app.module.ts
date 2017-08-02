@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
+import {Child} from './child/child.component';
+import {MyService} from './child/my-service';
 
 
 import { AppComponent } from './app.component';
@@ -9,7 +11,7 @@ import {CalendarModule} from 'primeng/primeng';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, Child
   ],
   imports: [
     BrowserModule,
@@ -18,7 +20,7 @@ import {CalendarModule} from 'primeng/primeng';
 
     FormsModule
   ],
-  providers: [],
+  providers: [MyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -10,6 +10,18 @@
   showTime="showTime" hourFormat="24"
   utc="true"
   icon="fa-calendar"></p-calendar>
+
+<h2>Presents</h2>
+<button (click)="send()" >send present</button>
+<p>
+<app-child *ngFor="let c of children" [name] = c></app-child>
+</p>
+<h3>history</h3>
+<ul>
+  <li *ngFor="let ev of history">{{ev}}</li>
+</ul>
+
+
 <h2>Here are some links to help you start: </h2>
 <ul>
   <li>
